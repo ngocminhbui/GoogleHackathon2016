@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "464294152703",
+    "firebase_url": "https://project-7159702026822213498.firebaseio.com",
+    "project_id": "project-7159702026822213498",
+    "storage_bucket": "project-7159702026822213498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464294152703:android:4178420023754a09",
+        "android_client_info": {
+          "package_name": "com.a1412453.googlelogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464294152703-41r3ed1hlf7ajn8bt4g68mst1u21vesn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a1412453.googlelogin",
+            "certificate_hash": "64B740E935637384723130C542B5189E3B0FFADE"
+          }
+        },
+        {
+          "client_id": "464294152703-4v5cc2rfoba8os3bdoo92j8pma4l1ivn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvaf7TmlxNNB_6jcMsiYsDTUwxNiiZJAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464294152703-4v5cc2rfoba8os3bdoo92j8pma4l1ivn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464294152703:android:ea1782dd89705c60",
+        "android_client_info": {
+          "package_name": "com.example.nguyen.mobilehackthon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464294152703-mp1t8sqfu0nt8ecakpr25jk5s57odp86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nguyen.mobilehackthon",
+            "certificate_hash": "02663BEB8CE163AE9F83C6C859D53E1D0611FA84"
+          }
+        },
+        {
+          "client_id": "464294152703-4v5cc2rfoba8os3bdoo92j8pma4l1ivn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvaf7TmlxNNB_6jcMsiYsDTUwxNiiZJAw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464294152703-4v5cc2rfoba8os3bdoo92j8pma4l1ivn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

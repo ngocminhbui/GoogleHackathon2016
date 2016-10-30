@@ -1,0 +1,9 @@
+<resources>
+    <string name="geo_api_key">AIzaSyAj2vB68BTa9vwy-stS0xOGOvivx09AAW8</string>
+
+    <string name="app_name">MobileHackthon</string>
+    <string name="main_fab_change_view">Chuyển giao diện</string>
+    <string name="main_fab_add_plan">Thêm kế hoạch</string>
+    <string name="loading">Loading...</string>
+
+</resources>

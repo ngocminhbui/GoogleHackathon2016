@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0076a3">
+        <ImageButton
+            app:srcCompat="@drawable/icon_back"
+            android:background="@android:color/transparent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_back" />
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Thêm sự kiện"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_add_event">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tiêu đề:"
+                android:layout_weight="4"
+                style="@style/TextSubject" />
+            <EditText
+                android:layout_marginEnd="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingLeft="10dp"
+                android:layout_weight="12"
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/edt_title"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.26"
+                android:layout_height="wrap_content"
+                android:text="Danh mục:"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/text_color_blue"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spin_catalog"
+                android:layout_width="0dp"
+                android:layout_weight="0.24"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.27"
+                android:layout_height="wrap_content"
+                android:text="Báo trước:"
+                style="@style/TextSubject"></TextView>
+
+            <Spinner
+                android:id="@+id/spin_remind"
+                android:layout_width="0dp"
+                android:layout_weight="0.23"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginRight="6dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Địa diểm:"
+                style="@style/TextSubject"
+                android:layout_weight="4" />
+            <AutoCompleteTextView
+                android:layout_marginEnd="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingLeft="10dp"
+                android:layout_weight="10"
+                android:lines="4"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/edt_location"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.8"
+                android:layout_height="wrap_content"
+                android:text="Bắt đầu:"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/text_color_blue"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day"
+                android:hint="day"
+                style="@style/TextHint"
+                />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_month"
+                style="@style/TextHint"
+                android:hint="month"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="2dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_year"
+                style="@style/TextHint"
+                android:hint="year"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/ic_calendar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_pick_day_start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gio"
+                style="@style/TextHint"
+                android:hint="giờ"
+                android:layout_marginLeft="98dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_phut"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                style="@style/TextHint"
+                android:hint="phút"
+                android:layout_marginLeft="2dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_pick_time"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_time"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.8"
+                android:layout_height="wrap_content"
+                android:text="Kết thúc:"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/text_color_blue"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_end"
+                android:hint="day"
+                style="@style/TextHint"
+                />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_month_end"
+                style="@style/TextHint"
+                android:hint="month"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="2dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_year_end"
+                style="@style/TextHint"
+                android:hint="year"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/ic_calendar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_pick_day_end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gio_end"
+                style="@style/TextHint"
+                android:hint="giờ"
+                android:layout_marginLeft="98dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_phut_end"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                style="@style/TextHint"
+                android:hint="phút"
+                android:layout_marginLeft="2dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_pick_time_end"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_time"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_add_participant"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/icon_add_user"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn_add_participant">
+
+                <EditText
+                    android:id="@+id/edtTen"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên người tham gia"
+                    android:textColorHint="@color/text_color_blue"
+                    android:background="@drawable/edit_text_background"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+                <EditText
+                    android:layout_margin="20dp"
+                    android:id="@+id/edtSdt"
+                    android:hint="SĐT"
+                    android:textColorHint="@color/text_color_blue"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+                <EditText
+                    android:layout_margin="5dp"
+                    android:id="@+id/edt_tk"
+                    android:hint="Tài khoản"
+                    android:textColorHint="@color/text_color_blue"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_blue"
+            android:text="Xong"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_finish" />
+    </LinearLayout>
+</LinearLayout>
