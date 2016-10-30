@@ -6,9 +6,7 @@ import android.util.DisplayMetrics;
 
 import com.example.nguyen.mobilehackthon.R;
 
-/**
- * Created by khangduyle on 30/10/2016.
- */
+
 public class PopAuthor extends  Activity{
    @Override
    protected void onCreate(Bundle savedInstanceState) {

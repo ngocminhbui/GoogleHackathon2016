@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -32,6 +33,7 @@
         <activity android:name=".Widget.PopupCalendar"></activity>
         <activity android:name=".Widget.PopupClock"></activity>
         <activity android:name=".Widget.PopAuthor"></activity>
+        <activity android:name=".Widget.PopResult"></activity>
     </application>
 
 </manifest>

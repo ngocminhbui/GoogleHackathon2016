@@ -30,6 +30,7 @@
         android:layout_height="45dp"
         android:gravity="right"
         android:background="@null"
+        android:id="@+id/btnRecord"
         android:src="@drawable/ic_micro"/>
 
 
